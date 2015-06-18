@@ -1,0 +1,14 @@
+# Precompiled Headers
+*.gch
+*.pch
+
+# Executables
+*.exe
+*.out
+*.app
+
+# Custom ignore
+Debug
+*.sdf
+*.suo
+*.opensdf
