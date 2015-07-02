@@ -7,8 +7,8 @@
 
 #include "Background.h"
 #include "Canon.h"
-#include "Canonball.h"
 #include "GlowingBalls.h"
+#include "Basket.h"
 
 class Peggle :
 	public Component
@@ -25,7 +25,11 @@ public:
 private : 
 	Background* background;
 	Canon* canon;
-	Canonball* canonball;
 	GlowingBalls* glowingballs;
+	Basket* basket;
+
+	GlowingBalls** gbArray;
+
+	D3DXVECTOR3 canonPos;
 };
 

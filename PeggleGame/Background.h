@@ -17,5 +17,7 @@ public:
 
 private:
 
-
+	D3DXVECTOR3 center;
+	float posX;
+	float posY;
 };

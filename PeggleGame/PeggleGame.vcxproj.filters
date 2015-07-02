@@ -64,5 +64,20 @@
     <Image Include="safe_image.jpg">
       <Filter>Fichiers de ressources</Filter>
     </Image>
+    <Image Include="Images\background.png">
+      <Filter>Fichiers de ressources</Filter>
+    </Image>
+    <Image Include="Images\basket.png">
+      <Filter>Fichiers de ressources</Filter>
+    </Image>
+    <Image Include="Images\canon.png">
+      <Filter>Fichiers de ressources</Filter>
+    </Image>
+    <Image Include="Images\canonball.png">
+      <Filter>Fichiers de ressources</Filter>
+    </Image>
+    <Image Include="Images\glowingballs.png">
+      <Filter>Fichiers de ressources</Filter>
+    </Image>
   </ItemGroup>
 </Project>

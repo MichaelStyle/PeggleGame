@@ -10,12 +10,21 @@ class Canonball :
 	public Sprite
 {
 public:
-	Canonball();
+	Canonball(float direction);
 	~Canonball();
 
 	void Update();
 
+	// Helper Functions
+	void Movement();
+
+	float posX;
+	float posY;
+	float canonDirection;
+
 private:
 
+	D3DXVECTOR3 center;
+	float speed;
 
 };

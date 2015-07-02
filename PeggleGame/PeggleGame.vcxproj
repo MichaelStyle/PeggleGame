@@ -41,13 +41,13 @@
   <PropertyGroup Label="UserMacros" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <LinkIncremental>true</LinkIncremental>
-    <IncludePath>..\..\bart-dx-engine-e15\src\Core;..\..\bart-dx-engine-e15\src\App;C:\Program Files %28x86%29\Microsoft DirectX SDK %28June 2010%29\Include;$(IncludePath)</IncludePath>
-    <LibraryPath>C:\Program Files %28x86%29\Microsoft DirectX SDK %28June 2010%29\Lib\x86;$(LibraryPath)</LibraryPath>
+    <IncludePath>..\..\bart-dx-engine-e15\src\Core;..\..\bart-dx-engine-e15\src\App;..\..\bart-dx-engine-e15\dependencies\irrKlang-1.5.0\include;C:\Program Files %28x86%29\Microsoft DirectX SDK %28June 2010%29\Include;$(IncludePath)</IncludePath>
+    <LibraryPath>..\..\bart-dx-engine-e15\dependencies\irrKlang-1.5.0\lib\Win32-visualStudio;C:\Program Files %28x86%29\Microsoft DirectX SDK %28June 2010%29\Lib\x86;$(LibraryPath)</LibraryPath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
     <LinkIncremental>false</LinkIncremental>
-    <IncludePath>..\..\bart-dx-engine-e15\src\Core;..\..\bart-dx-engine-e15\src\App;C:\Program Files %28x86%29\Microsoft DirectX SDK %28June 2010%29\Include;$(IncludePath)</IncludePath>
-    <LibraryPath>C:\Program Files %28x86%29\Microsoft DirectX SDK %28June 2010%29\Lib\x86;$(LibraryPath)</LibraryPath>
+    <IncludePath>..\..\bart-dx-engine-e15\src\Core;..\..\bart-dx-engine-e15\dependencies\irrKlang-1.5.0\include;..\..\bart-dx-engine-e15\src\App;C:\Program Files %28x86%29\Microsoft DirectX SDK %28June 2010%29\Include;$(IncludePath)</IncludePath>
+    <LibraryPath>..\..\bart-dx-engine-e15\dependencies\irrKlang-1.5.0\lib\Win32-visualStudio;C:\Program Files %28x86%29\Microsoft DirectX SDK %28June 2010%29\Lib\x86;$(LibraryPath)</LibraryPath>
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <ClCompile>
@@ -60,7 +60,7 @@
     <Link>
       <SubSystem>Windows</SubSystem>
       <GenerateDebugInformation>true</GenerateDebugInformation>
-      <AdditionalDependencies>d3d9.lib;d3dx9.lib;dxguid.lib;dxerr.lib;dinput8.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalDependencies>d3d9.lib;d3dx9.lib;dxguid.lib;dxerr.lib;dinput8.lib;irrklang.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
@@ -100,6 +100,11 @@
     <ClInclude Include="ResourceIDs.h" />
   </ItemGroup>
   <ItemGroup>
+    <Image Include="Images\background.png" />
+    <Image Include="Images\basket.png" />
+    <Image Include="Images\canon.png" />
+    <Image Include="Images\canonball.png" />
+    <Image Include="Images\glowingballs.png" />
     <Image Include="safe_image.jpg" />
   </ItemGroup>
   <ItemGroup>
